@@ -17,7 +17,7 @@ coverage/
 *.coverage
 *.coveragexml
 coverage.json
-coverage.cobertura.xml
+# keep reports/coverage.cobertura.xml as assignment evidence
 
 ## OS / IDE
 .DS_Store

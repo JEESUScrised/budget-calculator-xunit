@@ -1,0 +1,5 @@
+source: TestResults/da41289f-b7ed-49e9-a867-674f9211f6a3/coverage.cobertura.xml
+line-rate overall: 0.7368000000000001
+branch-rate overall: 1
+BudgetController line coverage: 100.0%
+BudgetController branch coverage: 100.0%
