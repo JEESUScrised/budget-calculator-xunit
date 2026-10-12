@@ -1,15 +1,18 @@
-dotnet test (before insurance fix)
-
-Test run for BudgetCalculator.Tests.dll (.NETCoreApp,Version=v9.0)
-VSTest version 17.14.1 (x64)
-
-Failed BudgetCalculator.Tests.BudgetControllerTests.Calculate_WithInsurance_Returns200And525 [2 ms]
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  BudgetCalculator.Api -> C:\Users\user\Desktop\budget-calculator-xunit-red-817d011\src\BudgetCalculator.Api\bin\Debug\net9.0\BudgetCalculator.Api.dll
+  BudgetCalculator.Tests -> C:\Users\user\Desktop\budget-calculator-xunit-red-817d011\tests\BudgetCalculator.Tests\bin\Debug\net9.0\BudgetCalculator.Tests.dll
+Test run for C:\Users\user\Desktop\budget-calculator-xunit-red-817d011\tests\BudgetCalculator.Tests\bin\Debug\net9.0\BudgetCalculator.Tests.dll (.NETCoreApp,Version=v9.0)
+A total of 1 test files matched the specified pattern.
+  Failed BudgetCalculator.Tests.BudgetControllerTests.Calculate_WithInsurance_Returns200And525 [2 ms]
   Error Message:
    Assert.Equal() Failure: Values differ
 Expected: 525
 Actual:   2500
   Stack Trace:
-     at BudgetCalculator.Tests.BudgetControllerTests.Calculate_WithInsurance_Returns200And525()
-        in ...\BudgetControllerTests.cs:line 50
+     at BudgetCalculator.Tests.BudgetControllerTests.Calculate_WithInsurance_Returns200And525() in C:\Users\user\Desktop\budget-calculator-xunit-red-817d011\tests\BudgetCalculator.Tests\BudgetControllerTests.cs:line 50
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
 
-Failed!  - Failed:     1, Passed:     1, Skipped:     0, Total:     2, Duration: 17 ms
+Failed!  - Failed:     1, Passed:     1, Skipped:     0, Total:     2, Duration: 16 ms - BudgetCalculator.Tests.dll (net9.0)
+[xUnit.net 00:00:00.11]     BudgetCalculator.Tests.BudgetControllerTests.Calculate_WithInsurance_Returns200And525 [FAIL]

@@ -1,19 +1,14 @@
-Coverlet / Cobertura - BudgetController
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  BudgetCalculator.Api -> C:\Users\user\Desktop\budget-calculator-xunit\src\BudgetCalculator.Api\bin\Debug\net9.0\BudgetCalculator.Api.dll
+  BudgetCalculator.Tests -> C:\Users\user\Desktop\budget-calculator-xunit\tests\BudgetCalculator.Tests\bin\Debug\net9.0\BudgetCalculator.Tests.dll
+Test run for C:\Users\user\Desktop\budget-calculator-xunit\tests\BudgetCalculator.Tests\bin\Debug\net9.0\BudgetCalculator.Tests.dll (.NETCoreApp,Version=v9.0)
+A total of 1 test files matched the specified pattern.
 
-Command:
-  dotnet test --collect:"XPlat Code Coverage"
+Passed!  - Failed:     0, Passed:     6, Skipped:     0, Total:     6, Duration: 20 ms - BudgetCalculator.Tests.dll (net9.0)
 
-Source:
-  TestResults/.../coverage.cobertura.xml
+Attachments:
+  C:\Users\user\Desktop\budget-calculator-xunit\TestResults\e08440d7-d399-49da-81e2-e700c1515e39\coverage.cobertura.xml
 
-Overall API assembly:
-  line-rate:   0.7368 (73.68%)
-  branch-rate: 1.0000 (100%)
-
-BudgetController.Calculate:
-  line coverage:   100.0%
-  branch coverage: 100.0%
-
-Branches covered:
-  - request.Days <= 0          (true / false)
-  - request.IncludeInsurance   (true / false)
+Cobertura file: C:\Users\user\Desktop\budget-calculator-xunit\TestResults\e08440d7-d399-49da-81e2-e700c1515e39\coverage.cobertura.xml
+BudgetController line-rate=100.00% branch-rate=100.00%

@@ -30,3 +30,10 @@ Thumbs.db
 .env
 *.pfx
 *.p12
+
+## Local capture helpers / temp evidence renders
+screenshots/docx_pages/
+screenshots/_*.png
+screenshots/_*.flag
+screenshots/_*.txt
+scripts/_wrap_*.ps1

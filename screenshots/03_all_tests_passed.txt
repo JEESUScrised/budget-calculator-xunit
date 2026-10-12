@@ -1,20 +1,8 @@
-dotnet test (after insurance fix)
-
-Determining projects to restore...
-All projects are up-to-date for restore.
-BudgetCalculator.Api -> bin/Debug/net9.0/BudgetCalculator.Api.dll
-BudgetCalculator.Tests -> bin/Debug/net9.0/BudgetCalculator.Tests.dll
-
-Test run for BudgetCalculator.Tests.dll (.NETCoreApp,Version=v9.0)
-VSTest version 17.14.1 (x64)
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  BudgetCalculator.Api -> C:\Users\user\Desktop\budget-calculator-xunit\src\BudgetCalculator.Api\bin\Debug\net9.0\BudgetCalculator.Api.dll
+  BudgetCalculator.Tests -> C:\Users\user\Desktop\budget-calculator-xunit\tests\BudgetCalculator.Tests\bin\Debug\net9.0\BudgetCalculator.Tests.dll
+Test run for C:\Users\user\Desktop\budget-calculator-xunit\tests\BudgetCalculator.Tests\bin\Debug\net9.0\BudgetCalculator.Tests.dll (.NETCoreApp,Version=v9.0)
 A total of 1 test files matched the specified pattern.
 
-Passed!  - Failed:     0, Passed:     6, Skipped:     0, Total:     6, Duration: 11 ms
-
-Passed tests:
-  Calculate_HappyPath_WithoutInsurance_Returns200And500
-  Calculate_WithInsurance_Returns200And525
-  Calculate_NegativeDays_ReturnsBadRequest
-  Calculate_ZeroDays_ReturnsBadRequest
-  Calculate_ZeroDailyCost_Returns200And0
-  Calculate_DecimalDailyCost_ReturnsExactTotal
+Passed!  - Failed:     0, Passed:     6, Skipped:     0, Total:     6, Duration: 9 ms - BudgetCalculator.Tests.dll (net9.0)
