@@ -17,10 +17,9 @@ public class BudgetController : ControllerBase
 
         decimal total = request.DailyCost * request.Days;
 
-        // Intentional educational bug: multiplies by 5 instead of adding 5%.
         if (request.IncludeInsurance)
         {
-            total *= 5;
+            total *= 1.05m;
         }
 
         return Ok(new { TotalAmount = total });
