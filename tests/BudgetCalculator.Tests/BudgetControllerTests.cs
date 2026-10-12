@@ -49,4 +49,72 @@ public class BudgetControllerTests
         Assert.Equal(200, ok.StatusCode ?? 200);
         Assert.Equal(525m, ReadTotalAmount(ok));
     }
+
+    [Fact]
+    public void Calculate_NegativeDays_ReturnsBadRequest()
+    {
+        var request = new BudgetRequest
+        {
+            DailyCost = 100m,
+            Days = -1,
+            IncludeInsurance = false
+        };
+
+        var result = _controller.Calculate(request);
+
+        var bad = Assert.IsType<BadRequestObjectResult>(result);
+        Assert.Equal(400, bad.StatusCode ?? 400);
+        Assert.Equal("Days must be greater than zero.", bad.Value);
+    }
+
+    [Fact]
+    public void Calculate_ZeroDays_ReturnsBadRequest()
+    {
+        var request = new BudgetRequest
+        {
+            DailyCost = 100m,
+            Days = 0,
+            IncludeInsurance = false
+        };
+
+        var result = _controller.Calculate(request);
+
+        var bad = Assert.IsType<BadRequestObjectResult>(result);
+        Assert.Equal(400, bad.StatusCode ?? 400);
+        Assert.Equal("Days must be greater than zero.", bad.Value);
+    }
+
+    [Fact]
+    public void Calculate_ZeroDailyCost_Returns200And0()
+    {
+        var request = new BudgetRequest
+        {
+            DailyCost = 0m,
+            Days = 5,
+            IncludeInsurance = false
+        };
+
+        var result = _controller.Calculate(request);
+
+        var ok = Assert.IsType<OkObjectResult>(result);
+        Assert.Equal(200, ok.StatusCode ?? 200);
+        Assert.Equal(0m, ReadTotalAmount(ok));
+    }
+
+    [Fact]
+    public void Calculate_DecimalDailyCost_ReturnsExactTotal()
+    {
+        var request = new BudgetRequest
+        {
+            DailyCost = 100.50m,
+            Days = 3,
+            IncludeInsurance = false
+        };
+
+        var result = _controller.Calculate(request);
+
+        var ok = Assert.IsType<OkObjectResult>(result);
+        Assert.Equal(200, ok.StatusCode ?? 200);
+        Assert.Equal(301.50m, ReadTotalAmount(ok));
+    }
 }
