@@ -1,0 +1,32 @@
+## .NET
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+*.DotSettings.user
+
+## Test / coverage
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+coverage.json
+coverage.cobertura.xml
+
+## OS / IDE
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+## Secrets / local
+.env
+*.pfx
+*.p12

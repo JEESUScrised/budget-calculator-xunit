@@ -1,0 +1,28 @@
+﻿  ╨Ю╨┐╤А╨╡╨┤╨╡╨╗╨╡╨╜╨╕╨╡ ╨┐╤А╨╛╨╡╨║╤В╨╛╨▓ ╨┤╨╗╤П ╨▓╨╛╤Б╤Б╤В╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤П...
+  ╨Т╤Б╨╡ ╨┐╤А╨╛╨╡╨║╤В╤Л ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╤Л ╨┤╨╗╤П ╨▓╨╛╤Б╤Б╤В╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤П.
+  BudgetCalculator.Api -> C:\Users\user\Desktop\budget-calculator-xunit\src\BudgetCalculator.Api\bin\Debug\net9.0\BudgetCalculator.Api.dll
+  BudgetCalculator.Tests -> C:\Users\user\Desktop\budget-calculator-xunit\tests\BudgetCalculator.Tests\bin\Debug\net9.0\BudgetCalculator.Tests.dll
+╨в╨╡╤Б╤В╨╛╨▓╤Л╨╣ ╨╖╨░╨┐╤Г╤Б╨║ ╨┤╨╗╤П C:\Users\user\Desktop\budget-calculator-xunit\tests\BudgetCalculator.Tests\bin\Debug\net9.0\BudgetCalculator.Tests.dll (.NETCoreApp,Version=v9.0)
+╨Т╨╡╤А╤Б╨╕╤П VSTest 17.14.1 (x64)
+
+╨Ч╨░╨┐╤Г╤Б╨║ ╨▓╤Л╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤П ╤В╨╡╤Б╤В╨╛╨▓; ╨┐╨╛╨┤╨╛╨╢╨┤╨╕╤В╨╡...
+╨Ю╨▒╤Й╨╡╨╡ ╨║╨╛╨╗╨╕╤З╨╡╤Б╤В╨▓╨╛ ╤В╨╡╤Б╤В╨╛╨▓╤Л╤Е ╤Д╨░╨╣╨╗╨╛╨▓ (1), ╤Б╨╛╨╛╤В╨▓╨╡╤В╤Б╤В╨▓╤Г╤О╤Й╨╕╤Е ╤Г╨║╨░╨╖╨░╨╜╨╜╨╛╨╝╤Г ╤И╨░╨▒╨╗╨╛╨╜╤Г.
+dotnet : [xUnit.net 00:00:00.11]     BudgetCalculator.Tests.BudgetControllerTests.Calculate_WithInsurance_Returns200And
+525 [FAIL]
+C:\Users\user\AppData\Local\Temp\ps-script-0bd562c1-6732-448a-b5d5-a54cb1841e29.ps1:91 знак:1
++ dotnet test 2>&1 | Out-File -FilePath screenshots\02_insurance_test_f ...
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([xUnit.net 00:0...00And525 [FAIL]:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  ╨Э╨╡ ╨┐╤А╨╛╨╣╨┤╨╡╨╜ BudgetCalculator.Tests.BudgetControllerTests.Calculate_WithInsurance_Returns200And525 [2 ms]
+  ╨б╨╛╨╛╨▒╤Й╨╡╨╜╨╕╨╡ ╨╛╨▒ ╨╛╤И╨╕╨▒╨║╨╡:
+   Assert.Equal() Failure: Values differ
+Expected: 525
+Actual:   2500
+  ╨в╤А╨░╤Б╤Б╨╕╤А╨╛╨▓╨║╨░ ╤Б╤В╨╡╨║╨░:
+     at BudgetCalculator.Tests.BudgetControllerTests.Calculate_WithInsurance_Returns200And525() in C:\Users\user\Desktop\budget-calculator-xunit\tests\BudgetCalculator.Tests\BudgetControllerTests.cs:line 50
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+╨Э╨╡ ╨┐╤А╨╛╨╣╨┤╨╡╨╜!: ╨╜╨╡ ╨┐╤А╨╛╨╣╨┤╨╡╨╜╨╛     1, ╨┐╤А╨╛╨╣╨┤╨╡╨╜╨╛     1, ╨┐╤А╨╛╨┐╤Г╤Й╨╡╨╜╨╛     0, ╨▓╤Б╨╡╨│╨╛     2, ╨┤╨╗╨╕╤В╨╡╨╗╤М╨╜╨╛╤Б╤В╤М 17 ms. - BudgetCalculator.Tests.dll (net9.0)
